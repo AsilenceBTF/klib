@@ -10,7 +10,7 @@ extern "C" {
 #endif
 
 //#define __NATIVE_USE_KLIB__
-void pu(char *args);
+void pu(char *args); // 输出字符串
 
 
 
@@ -39,7 +39,9 @@ int    printf    (const char *format, ...);
 int    sprintf   (char *str, const char *format, ...);
 int    snprintf  (char *str, size_t size, const char *format, ...);
 int    vsprintf  (char *str, const char *format, va_list ap);
-int    vsnprintf (char *str, size_t size, const char *format, va_list ap);
+int    vsnprintf (char *str, size_t size, const char *format, va_list args);
+char   *intos    (char *buf, int number);
+
 
 // assert.h
 #ifdef NDEBUG
